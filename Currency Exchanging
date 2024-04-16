@@ -1,6 +1,6 @@
 //Currency Inital Values
 var canadian: Double = 30
-var rupee: Double = 3000
+var rupee: Double = 30000
 var real: Double = 50
 var euros: Double = 500
 var total: Double = 0
@@ -11,9 +11,16 @@ var total: Double = 0
 //Euros to USD: 1.06 / 1 USD
 
 //Current USD State
-var usd: Double = 7000
+var usd: Double = 70000
 var pastTotal: Double = 0
 
 total = 0.72 * canadian + 0.012 * rupee + 0.19 * real + 1.06 * euros
 print (total)
 //Finding out the total in USD of how much was spent on the trip
+
+pastTotal = usd + total
+print (pastTotal)
+//Compiling totals
+
+print ("I had $\(pastTotal) before my trip")
+//Final display of result
